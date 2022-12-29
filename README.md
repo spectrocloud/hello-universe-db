@@ -1,3 +1,4 @@
+[![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
 # Hello Universe DB
 A Spectro Cloud demo application. This is the database that supports the Hello Universe app.
 
