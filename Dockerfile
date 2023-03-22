@@ -1,4 +1,4 @@
-FROM postgres:15.1-alpine
+FROM postgres:15.2-alpine
 ENV POSTGRES_PASSWORD password
 ENV POSTGRES_USER postgres
 ENV POSTGRES_PORT 5432
