@@ -20,7 +20,7 @@ To get use the container you can issue the following command to download the con
 docker pull ghcr.io/spectrocloud/hello-universe-db:1.0.0 && \
 docker run -p 5432:5432 ghcr.io/spectrocloud/hello-universe-db:1.0.0
 ```
-The command you issued downloaded the container and exposed port `5432`. The default user name is `postgres` and the password is `postgres`.
+The command you issued downloaded the container and exposed port `5432`. The default user name is `postgres` and the password is `password`.
 
 ### Database Schema
 
