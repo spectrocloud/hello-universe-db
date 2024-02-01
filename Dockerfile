@@ -1,4 +1,7 @@
-FROM postgres:15.2-alpine
+# Copyright (c) Spectro Cloud
+# SPDX-License-Identifier: MPL-2.0
+
+FROM postgres:16.1-alpine
 ENV POSTGRES_PASSWORD password
 ENV POSTGRES_USER postgres
 ENV POSTGRES_PORT 5432
