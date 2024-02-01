@@ -6,7 +6,6 @@ repositoryUrl: https://github.com/spectrocloud/hello-universe-db
 plugins:
   - "@semantic-release/commit-analyzer"
   - "@semantic-release/release-notes-generator"
-  - "@semantic-release/changelog"
   - - "@semantic-release/exec"
     - analyzeCommitsCmd: echo 'NEW_VERSION=false' > VERSION.env
       verifyReleaseCmd: |-
