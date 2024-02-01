@@ -57,7 +57,7 @@ If the container image is not valid, an error is displayed. The following exampl
 
 ```shell hideClipboard
 cosign verify --key https://raw.githubusercontent.com/spectrocloud/librarium/master/static/cosign.pub \
-ghcr.io/spectrocloud/hello-universe-db:1.0.1
+ghcr.io/spectrocloud/hello-universe-db:1.0.2
 ```
 
 ```shell hideClipboard
