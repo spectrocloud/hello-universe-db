@@ -3,3 +3,6 @@ build/
 README.md
 LICENSE
 .gitignore
+\*.hcl
+docs/
+cosign.key
