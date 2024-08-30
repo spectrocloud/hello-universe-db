@@ -14,7 +14,7 @@ The [Hello Universe](https://github.com/spectrocloud/hello-universe) app include
 
 ## Prerequisites
 
-Ensure [Docker Desktop](https://www.docker.com/products/docker-desktop/) on your local machine is available. 
+Ensure [Docker Desktop](https://www.docker.com/products/docker-desktop/) is available on your local machine. 
 
 - Use the following command and ensure you receive an output displaying the version number.
     ```
