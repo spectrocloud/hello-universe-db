@@ -10,7 +10,7 @@ A Spectro Cloud demo application. This is the database that supports the [Hello 
 
 # Overview
 
-The [Hello Universe](https://github.com/spectrocloud/hello-universe) app includes an [API server](https://github.com/spectrocloud/hello-universe-api) that relies on a Postgres database for storing the number of clicks and other metadata about the clicks such as the browser, os, and timestamp. For your convenience, a Postgres container is available for use.
+The [Hello Universe](https://github.com/spectrocloud/hello-universe) app includes an [API server](https://github.com/spectrocloud/hello-universe-api) that relies on a Postgres database for storing the number of events and other metadata about the events such as the browser, os, and timestamp. For your convenience, a Postgres container is available for use.
 
 ## Prerequisites
 
