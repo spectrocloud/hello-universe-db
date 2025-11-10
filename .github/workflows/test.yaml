@@ -1,0 +1,27 @@
+name: Dockerfile build test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      # Build using your Makefile target (runs: docker build -t hello-universe-db .)
+      - name: Build Docker image
+        run: make build
+
+      # Quick sanity check that the image exists
+      - name: Verify image was built
+        run: docker image inspect hello-universe-db:latest > /dev/null
