@@ -16,7 +16,7 @@ jobs:
       contents: read
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       # Build using your Makefile target (runs: docker build -t hello-universe-db .)
       - name: Build Docker image
