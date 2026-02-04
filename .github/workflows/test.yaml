@@ -10,6 +10,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   NODE_VERSION: "22"
 
 jobs:
