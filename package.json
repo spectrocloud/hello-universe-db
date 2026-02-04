@@ -10,7 +10,7 @@
         "@commitlint/cli": "^20.4.1",
         "@commitlint/config-conventional": "^20.4.1",
         "@semantic-release/changelog": "^6.0.3",
-        "@semantic-release/exec": "^6.0.3",
+        "@semantic-release/exec": "^7.1.0",
         "@semantic-release/git": "latest",
         "@semantic-release/github": "latest",
         "@semantic-release/npm": "latest",
