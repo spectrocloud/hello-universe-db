@@ -6,6 +6,7 @@ on:
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  NODE_VERSION: "22"
 
 jobs:
   docker:
@@ -21,7 +22,7 @@ jobs:
       - name: Setup Nodejs
         uses: actions/setup-node@v6
         with:
-          node-version: 18
+          node-version: ${{ env.NODE_VERSION }}
 
       - name: Install dependencies
         run: npm ci
@@ -33,7 +34,7 @@ jobs:
           npx semantic-release --dry-run
           cat VERSION.env
           source VERSION.env
-          echo "::set-output name=version::$VERSION"
+           echo "version=$VERSION" >> $GITHUB_OUTPUT
 
       - name: Set up QEMU
         if: ${{ steps.version.outputs.VERSION != ''}}
@@ -65,6 +66,7 @@ jobs:
       - uses: sigstore/cosign-installer@v4.0.0
 
       - name: Image Signing
+        if: ${{ steps.version.outputs.VERSION != ''}}
         run: |
           cosign sign --yes \
           -a "repo=${{ github.repository }}" \
