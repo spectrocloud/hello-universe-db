@@ -15,7 +15,7 @@
         "@semantic-release/github": "latest",
         "@semantic-release/npm": "latest",
         "husky": "^9.1.7",
-        "semantic-release": "^25.0.5",
+        "semantic-release": "^25.0.8",
         "standard-version": "^9.5.0"
     }
 }
